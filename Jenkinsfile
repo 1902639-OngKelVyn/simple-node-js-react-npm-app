@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                sh 'docker pull node:8'
                 sh 'npm install' 
             }
         }
